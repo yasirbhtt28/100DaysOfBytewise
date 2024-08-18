@@ -16,7 +16,7 @@ st.write("This application allows you to train models for flood prediction and v
 uploaded_file = st.file_uploader("Upload your CSV file", type=["csv"])
 if uploaded_file is not None:
     # Load the dataset
-    data = pd.read_csv('FloodPrediction.csv')
+    data = pd.read_csv('uploaded_file')
     st.write("First few rows of the dataset:")
     st.write(data.head())
     
