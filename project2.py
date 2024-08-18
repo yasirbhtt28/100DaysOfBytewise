@@ -13,10 +13,10 @@ st.title('Flood Prediction Model')
 st.write("This application allows you to train models for flood prediction and visualize the results.")
 
 # File upload
-uploaded_file = st.file_uploader("FloodPrediction.csv", type=["csv"])
+uploaded_file = st.file_uploader("Upload your CSV file", type=["csv"])
 if uploaded_file is not None:
     # Load the dataset
-    data = pd.read_csv(uploaded_file)
+    data = pd.read_csv('FloodPrediction.csv')
     st.write("First few rows of the dataset:")
     st.write(data.head())
     
